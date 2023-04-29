@@ -1,0 +1,143 @@
+.risposta{
+  position: absolute;
+  top: 14%;
+  width: 90%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input1{
+  background-color: #eee ;
+  left: 0%;
+  width: 60%;
+  align-items: center;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin-bottom: 13px;
+  margin-left: 3%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border-color: #FF6600;
+  border-width: 1px;
+  color: black;
+}
+
+.input2{
+  background-color: #eee ;
+  left: 0%;
+  width: 120%;
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin-bottom: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border-color: #FF6600;
+  border-width: 1px;
+  color: black;
+}
+
+.legenda{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.orari{
+  margin-top: 20%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.dalle{
+  margin-top: 0.5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 70%;
+}
+
+.alle{
+  position: absolute;
+  margin-top: 15%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  left: 70%;
+}
+
+
+.legendaOrari{
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  width: 100%;
+}
+
+.container {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+select{
+  margin-left: 4%;
+  margin-top: 2%;
+  position: absolute;
+  background-color: #eee;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  border: #FF6600 solid 1px;
+  border-radius: 5px;
+}
+
+.bottone{
+  background-color: #006DB6;
+  align-items: center;
+  position: absolute;
+  width: auto;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #FF6600;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 182%;
+}
+
+.nome{
+  position: absolute;
+  margin-top: 50%;
+}

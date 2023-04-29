@@ -1,0 +1,29 @@
+.qrcode{
+  top: 42%;
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.freccia{
+  top: 18%;
+  position: absolute;
+  height: 20%;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+.messaggio{
+    top: 8%;
+    text-align: center;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    width: 100%;
+}
