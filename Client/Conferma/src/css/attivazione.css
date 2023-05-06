@@ -1,10 +1,56 @@
-.risposta{
-  position: absolute;
+.informazioni
+{
   top: 14%;
+  position: absolute;
   width: 90%;
   display: flex;
   left: 50%;
   transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.indirizzo{
+  margin-top: 4%;
+  position: absolute;
+  display: flex;
+  width: 60%;
+}
+
+.maps{
+  margin-left: 65%;
+  display: flex;
+}
+
+.linea{
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.linea2{
+  position: absolute;
+  top: 75%;
+  width: 100%;
+}
+
+
+.evento{
+  position: absolute;
+  margin-top: 30%;
+}
+
+.risposta{
+  position: absolute;
+  top: 40%;
+  width: 90%;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .input1{
@@ -31,7 +77,7 @@
 .input2{
   background-color: #eee ;
   left: 0%;
-  width: 120%;
+  width: 91%;
   align-items: center;
   text-align: center;
   padding-left: 10px;
@@ -50,8 +96,10 @@
 
 .legenda{
   font-family: 'Inter', sans-serif;
+  width: 100%;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .orari{
@@ -64,24 +112,27 @@
   display: flex;
   left: 50%;
   transform: translateX(-50%);
+
 }
 
 
 .dalle{
-  margin-top: 0.5%;
+  margin-top: 12%;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 22px;
-  margin-left: 70%;
+  font-size: 24px;
+  width: 40%;
+  margin-left: 10%;
 }
 
 .alle{
   position: absolute;
-  margin-top: 15%;
+  margin-top: 12%;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 22px;
-  left: 70%;
+  font-size: 24px;
+  margin-left: 55%;
+  width: 40%;
 }
 
 
@@ -89,8 +140,9 @@
   position: absolute;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   width: 100%;
+  text-align: center;
 }
 
 .container {
@@ -134,10 +186,11 @@ select{
   font-size: 22px;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 182%;
+  margin-top: 70%;
 }
 
 .nome{
   position: absolute;
-  margin-top: 50%;
+  margin-top: 52%;
+  width: 100%;
 }

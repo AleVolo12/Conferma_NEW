@@ -7,19 +7,16 @@ import QRCode from "react-qr-code";
 
 import Titolo from "./titolo";
 
+import logo_maps from "../assets/logo_maps.png";
+
 import "../css/attivazione.css"
 
 
 function Attivazione(){
 
-  function Id()
-  {
-    var queryString = window.location.search;
-    var urlParams = new URLSearchParams(queryString);
-    var id = urlParams.get('id')
-    console.log(id);
-  }
-  Id();
+  const coordinate = "Via Roma 3, Milano (MI), 20120"
+  const evento = "P2 - Alluvione"
+  
 
   const [OrarioDalle, setOraioDalle] = useState("")
   const [OrarioAlle, setOraioAlle] = useState("")
@@ -50,11 +47,27 @@ function Attivazione(){
     <div>
 
       <div className="titolo">
-        <Titolo nomePagina={"Segnalazione"} />
+        <Titolo nomePagina={"Risposta"} />
       </div>
 
-      
+      <div className="informazioni">
+        <div className="indirizzo">
+          <p>{coordinate}</p>
+        </div>
+        <div className="maps">
+          <img src={logo_maps} width="100"/>
+        </div>
+        <div className="evento">
+          <p>Evento: {evento}</p>
+        </div>
+       
+        
+      </div>
 
+      <div className="linea">
+        <hr width="100%" size="2" color="#FF6600"/>
+      </div>
+      
       <div className="risposta">
         <form>
           
@@ -92,19 +105,17 @@ function Attivazione(){
           </div>
           
           <div className="nome">
-            <legend className="legenda">Nome evento: </legend>
+            <legend className="legenda">Nome evento:</legend>
             <input className="input2" type="text" name='Nome' 
               value={Nome || ""} onChange={handleChangeNome} 
               placeholder='Inserisci un nome personalizzato'/> 
           </div>  
-
-    
-          <input type="submit" className="bottone" value="CONFERMA" onClick={handleSubmit}/>
-    
         </form>
-
       </div>
-
+      <div className="linea2">
+        <hr width="100%" size="2" color="#FF6600"/>
+      </div>
+      <input type="submit" className="bottone" value="CONFERMA RISPOSTA" onClick={handleSubmit}/>  
     </div>
   )
 }
