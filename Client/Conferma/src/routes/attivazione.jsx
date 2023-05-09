@@ -18,24 +18,29 @@ function Attivazione(){
   const evento = "P2 - Alluvione"
   
 
-  const [OrarioDalle, setOraioDalle] = useState("")
-  const [OrarioAlle, setOraioAlle] = useState("")
+  const [giornoInizio, setGiornoInizio] = useState("")
+  const [giornoFine, setGiornoFine] = useState("")
   const [Nome, setNome] = useState("")
   const [Risposta, setRisposta] = useState({})
+  const [Orario, setOrario] = useState({})
 
   const navigate = useNavigate();
 
-  const handleChangeOrarioDalle = (event) => {
-    setOraioDalle(event.target.value);
+  const handleChangeGiornoInizio = (event) => {
+    setGiornoInizio(event.target.value);
   }
-  const handleChangeOrarioAlle = (event) => {
-    setOraioAlle(event.target.value);
+  const handleChangeGiornoFine  = (event) => {
+    setGiornoFine(event.target.value);
   }
   const handleChangeNome = (event) => {
     setNome(event.target.value);
   }
   const handleChangeRisposta = (event) => {
     setRisposta(event.target.value);
+  }
+
+  const handleChangeOrario = (event) => {
+    setOrario(event.target.value);
   }
 
   const handleSubmit = (event) => {
@@ -77,33 +82,47 @@ function Attivazione(){
             </div>
 
             <div className="select">
-              <select value={Risposta} onChange={handleChangeRisposta} name="tipologia">
+              <select value={Risposta} onChange={handleChangeRisposta}>
                 <option></option>
-                <option value="1"> &lt; 30min </option>
-                <option value="2"> &#126; 1h </option>
-                <option value="3"> &#126; 2h </option>
-                <option value="4"> &#126; 3h </option>
-                <option value="5"> &gt; 3h </option>
+                <option value="<30min"> &lt; 30min </option>
+                <option value="1h"> &#126; 1h </option>
+                <option value="2h"> &#126; 2h </option>
+                <option value="3h"> &#126; 3h </option>
+                <option value=">3h"> &gt; 3h </option>
               </select>
             </div>
           </div>
 
-          <div className="orari">
+          <div className="giorni">
             
-            <legend className="legendaOrari">Disponibilità oraria:</legend>
-            <div className="dalle">
-            <input className="input1" type="text" name='OrarioDalle' 
-                value={OrarioDalle || ""} onChange={handleChangeOrarioDalle} 
+            <legend className="legendaGiorni">Disponibilità giornaliera:</legend>
+            <div className="inizio">
+            <input className="input1" type="date" name='giornoInizio' 
+                value={giornoInizio || ""} onChange={handleChangeGiornoInizio} 
                 placeholder='dalle'/>
             </div>
-            <div className="alle">
-            <input className="input1" type="text" name='OrarioAlle' 
-              value={OrarioAlle || ""} onChange={handleChangeOrarioAlle} 
+            <div className="fine">
+            <input className="input1" type="date" name='giornoFine' 
+              value={giornoFine || ""} onChange={handleChangeGiornoFine} 
               placeholder='alle'/> 
             </div>
              
           </div>
           
+          <div className="containerOrari">
+            <legend className="legendaOrari"> Monte ore totale:  </legend>
+            <div className="select">
+              <select value={Orario} onChange={handleChangeOrario}>
+                <option></option>
+                <option value="1h-5h"> 1h-5h </option>
+                <option value="5h-10h"> 5h-10h </option>
+                <option value="10h-20h"> 10h-20h </option>
+                <option value="20h-30h"> 20h-30h </option>
+                <option value=">30h"> &gt; 30h </option>
+              </select>
+            </div>
+          </div>
+
           <div className="nome">
             <legend className="legenda">Nome evento:</legend>
             <input className="input2" type="text" name='Nome' 
